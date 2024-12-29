@@ -1,0 +1,126 @@
+ /* Reset some default styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray */
+    color: #333; /* Dark gray */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff; /* White */
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #555; /* Medium gray */
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.input-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #5cb85c; /* Green */
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+    background-color: #4cae4c;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+   
+padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span {
+    flex: 1;
+}
+
+.button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #d9534f; /* Red */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li button:hover {
+    background-color: #c9302c;
+}
+
+.div{
+    display: flex;
+  align-items: center;
+  justify-content: space-between; /* Empuja el botón al extremo derecho */
+  background-color: #f9f9f9; /* Fondo gris muy claro */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 8px; /* Bordes redondeados más suaves */
+  padding: 10px; /* Espaciado interno */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para un toque moderno */
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .input-container input {
+        font-size: 0.9em;
+    }
+
+    .input-container button {
+        font-size: 0.9em;
+    }
+
+    li {
+        font-size: 0.9em;
+    }
+}
